@@ -3,7 +3,7 @@
 *.log.*
 t.js
 .idea/
-config.js
+config/config.js
 node_modules
 npm-debug.log
 db.json

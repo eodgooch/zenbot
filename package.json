@@ -14,6 +14,7 @@
     "formatmicro": "^1.0.6",
     "kraken-api": "^0.1.7",
     "micro-request": "^666.0.8",
+    "microtime": "2.1.1",
     "moment": "^2.13.0",
     "moment-timezone": "^0.5.4",
     "motley": "^2.2.7",

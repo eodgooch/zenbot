@@ -1,13 +1,13 @@
 var c = module.exports = require('./config')
 
 c.assets = [
-  "BTC",
+  "LTC"
 ]
 c.currencies = [
   "USD",
   "USDT",
-  "BTC"
+  "LTC"
 ]
 
-// default selector for indicators, etc
-c.default_selector = "gdax.ETH-USD"
+// selector for indicators, trading, etc
+c.default_selector = "gdax.LTC-UTC"

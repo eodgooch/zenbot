@@ -30,4 +30,4 @@ c.graph_selectors = [
 ]
 
 // trade logic
-c.logic = require('./default_logic')
+c.logic = require('./../logic/default_logic')
