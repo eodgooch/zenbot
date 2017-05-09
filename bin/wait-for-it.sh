@@ -46,7 +46,6 @@ wait_for()
 
 wait_for_wrapper()
 {
-    set -x
     # In order to support SIGINT during timeout: http://unix.stackexchange.com/a/57692
     if [[ $QUIET -eq 1 ]]; then
         /usr/bin/timeout $0 --quiet --child --host=$HOST --port=$PORT -t $TIMEOUT &
@@ -60,7 +59,6 @@ wait_for_wrapper()
     if [[ $RESULT -ne 0 ]]; then
         echoerr "$cmdname: /usr/bin/timeout occurred after waiting $TIMEOUT seconds for $HOST:$PORT"
     fi
-    set +x
     return $RESULT
 }
 

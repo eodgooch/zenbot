@@ -31,6 +31,14 @@ services:
       - ./bin:/app/bin
     command: ["bin/wait-for-it.sh", "mongodb:27017", "--timeout=30", "-s", "--", "bin/run-btc-usd.sh"]
 
+  ltc-usd:
+      image: superminingbros/zenbot:gerald-v3
+      links:
+        - mongodb
+      volumes:
+        - ./bin:/app/bin
+      command: ["bin/wait-for-it.sh", "mongodb:27017", "--timeout=30", "-s", "--", "bin/run-ltc-usd.sh"]
+
   ### Uncomment for `eth-usd` support
   # eth-usd:
   #   build: .
