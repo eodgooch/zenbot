@@ -1,7 +1,7 @@
 var c = module.exports = require('./config')
 
 c.assets = [
-  "BTC"
+  "BTC",
 ]
 c.currencies = [
   "USD",
@@ -10,4 +10,4 @@ c.currencies = [
 ]
 
 // default selector for indicators, etc
-c.default_selector = "gdax.BTC-USD"
+c.default_selector = "gdax.ETH-USD"

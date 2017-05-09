@@ -2,6 +2,8 @@
 *.tar.gz
 *.log.*
 t.js
+.idea/
+config.js
 node_modules
 npm-debug.log
 db.json
