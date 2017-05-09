@@ -9,6 +9,7 @@ services:
       - mongodb
       - reducer
       - btc-usd
+      - ltc-usd
     volumes:
       - ./bin:/app/bin
       # - eth-usd # Uncomment for `eth-usd` support (also uncomment container below)
