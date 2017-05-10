@@ -81,13 +81,13 @@ Note: add your GDAX key to `config.js` to enable real trading.
 The following command will run all Zenbot functionality, using the default BTC/USD pair.
 
 ```
-./run.sh
+./bin/run.sh
 ```
 
 Here's how to run a different pair (example: ETH-BTC):
 
 ```
-./zenbot launch map --backfill reduce run server --config config_eth_btc.js
+./bin/zenbot launch map --backfill reduce run server --config $(pwd)/config_eth_btc.js
 ```
 
 ### 4. Run zenbot (multi-pair mode)
@@ -97,31 +97,31 @@ The following will run multiple currency pairs along with the reducer and server
 Required: reducer (for processing trade data):
 
 ```
-./reducer.sh
+./bin/reducer.sh
 ```
 
 Optional: server (for candlestick graphs and aggregated log):
 
 ```
-./server.sh
+./bin/server.sh
 ```
 
 Required: one or more run scripts (watches trades of a given pair and performs trade actions on the exchange or simulation)
 
 ```
-./run-btc-usd.sh
+./bin/run-btc-usd.sh
 ```
 
 And/or to trade ETH,
 
 ```
-./run-eth-usd.sh
+./bin/run-eth-usd.sh
 ```
 
 And/or to trade ETH/BTC,
 
 ```
-./run-eth-btc.sh
+./bin/run-eth-btc.sh
 ```
 
 ### 5. If running server, open the live graph URL provided in the console.
@@ -129,7 +129,7 @@ And/or to trade ETH/BTC,
 To access the CLI,
 
 ```
-./zenbot
+./bin/zenbot
 
   Usage: ./zenbot [options] [command]
 
